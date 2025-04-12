@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <title>Courses - University Website Design</title>
+</head>
+<body>
+  <header class="course-header">
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+    <div class="nav-links" id="navLinks">
+      <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars"  onclick="showMenu()"></i>
+      </nav>
+
+  <!-- Course Header Section -->
+  
+    <h1>Courses We Offer</h1>
+     </header>
+<!----------------------javaScript for toggle Menu------------------>
+<section >
+  <script>
+    var navLinks= document.getElementById("navLinks")
+    function showMenu(){
+      navLinks.style.right ="0";
+    }
+    function hideMenu(){
+      navLinks.style.right="-200px";
+
+    }
+  </script>
+</section>
+  <!-- Course List Section -->
+</section>
+<section class="course">
+  <h1>Course We Offer</h1>
+  <p> Lorem ipsum dolor sit amet,consectetur adispiscing elit.</p>
+  <div class="row">
+    <div class="course-col">
+      <h3>Intermediate</h3>
+      <p>course is like opening a doorway to endless possibilities.
+         Whether you're diving into data science, brushing up on graphic design, 
+         or exploring the nuances of psychology, every course adds a new layer to your skill set.
+       </p>
+    </div>
+    <div class="course-col">
+      <h3>Degree</h3>
+      <p>course is like opening a doorway to endless possibilities.
+         Whether you're diving into data science, brushing up on graphic design, 
+         or exploring the nuances of psychology, every course adds a new layer to your skill set.
+       </p>
+    </div>
+    <div class="course-col">
+      <h3>Post Graduation</h3>
+      <p>course is like opening a doorway to endless possibilities.
+         Whether you're diving into data science, brushing up on graphic design, 
+         or exploring the nuances of psychology, every course adds a new layer to your skill set.
+       </p>
+    </div>
+  </div>
+</section>
+<section class="facilities">
+  <h1>Our Facilities</h1>
+  <div class="row">
+    <div class="facilities-col">
+      <img src="images/library.png" alt="Library">
+      <h3>World Class Library</h3>
+      <p>Access to a vast range of resources.</p>
+    </div>
+    <div class="facilities-col">
+      <img src="images/basketball.png" alt="Playground">
+      <h3>Largest Playground</h3>
+      <p>Enjoy sports and physical activities.</p>
+    </div>
+    <div class="facilities-col">
+      <img src="images/cafeteria.png" alt="Cafeteria">
+      <h3>Tasty and Healthy Food</h3>
+      <p>Delicious meals for all dietary needs.</p>
+    </div>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer>
+    <h4>About Us</h4>
+    <p>Made with <i class="fa fa-heart"></i> by Priya</p>
+    <div class="icons">
+      <i class="fab fa-facebook-f"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-linkedin-in"></i>
+    </div>
+  </footer>
+
+</body>
+</html>

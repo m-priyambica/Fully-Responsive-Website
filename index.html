@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+  <title>University Website Design</title>
+  
+</head>
+<body>
+  
+    <header class="header">
+    <nav>
+        <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="courses.html">Courses</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <i class="fa fa-bars"  onclick="showMenu()"></i>
+          </nav>
+    <div class="text-box">
+      <h1>World's Biggest University</h1>
+      <p>Making website is now one of the easiest  thing in the world.<br>You  just  neet to learn HTML,CSS,Javascript and  you are good to go </p>
+      <a href="contact.html" class="hero-btn">Visit Us to Know More</a>
+    </div>
+  </header>
+<!----------------------javaScript for toggle Menu------------------>
+  <section >
+    <script>
+      var navLinks= document.getElementById("navLinks")
+      function showMenu(){
+        navLinks.style.right ="0";
+      }
+      function hideMenu(){
+        navLinks.style.right="-200px";
+
+      }
+    </script>
+  </section>
+<section class="course">
+  <h1>Course We Offer</h1>
+  <p> Lorem ipsum dolor sit amet,consectetur adispiscing elit.</p>
+  <div class="row">
+    <div class="course-col">
+      <h3>Intermediate</h3>
+      <p>course is like opening a doorway to endless possibilities.
+         Whether you're diving into data science, brushing up on graphic design, 
+         or exploring the nuances of psychology, every course adds a new layer to your skill set.
+       </p>
+    </div>
+    <div class="course-col">
+      <h3>Degree</h3>
+      <p>course is like opening a doorway to endless possibilities.
+         Whether you're diving into data science, brushing up on graphic design, 
+         or exploring the nuances of psychology, every course adds a new layer to your skill set.
+       </p>
+    </div>
+    <div class="course-col">
+      <h3>Post Graduation</h3>
+      <p>course is like opening a doorway to endless possibilities.
+         Whether you're diving into data science, brushing up on graphic design, 
+         or exploring the nuances of psychology, every course adds a new layer to your skill set.
+       </p>
+    </div>
+  </div>
+</section>
+<section class="campus">
+ <h1>Our Global Campus</h1>
+ <p> Lorem ipsum dolor sit amet,consectetur adispiscing elit.</p>
+ <div class="row">
+  <div class="campus-col">
+     <img src="images/london.png">
+     <div class="layer">
+      <h3>LONDON</h3>
+     </div>
+  </div>
+  <div class="campus-col">
+    <img src="images/newyork.png">
+    <div class="layer">
+     <h3>NEW YORK</h3>
+    </div>
+ </div>
+ <div class="campus-col">
+  <img src="images/washington.png">
+  <div class="layer">
+   <h3>WASHINGTON</h3>
+  </div>
+</div>
+ </div>
+</section>
+  <section class="facilities">
+    <h1>Our Facilities</h1>
+    <div class="row">
+      <div class="facilities-col">
+        <img src="images/library.png" alt="Library">
+        <h3>World Class Library</h3>
+        <p>Access to a vast range of resources.</p>
+      </div>
+      <div class="facilities-col">
+        <img src="images/basketball.png" alt="Playground">
+        <h3>Largest Playground</h3>
+        <p>Enjoy sports and physical activities.</p>
+      </div>
+      <div class="facilities-col">
+        <img src="images/cafeteria.png" alt="Cafeteria">
+        <h3>Tasty and Healthy Food</h3>
+        <p>Delicious meals for all dietary needs.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <h1>What Students Say</h1>
+    <p class="testimonial-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+  <div class="testimonial-row">
+          <div class="testimonial-col">
+            <div class="testimonial-header">  
+        <img src="images/user1.jpg" alt="User 1">
+        <h3>Jane</h3>
+            </div>
+          <p>This university helped me achieve my dreams!</p>
+          <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        </div>
+        <div class="testimonial-col">
+          <div class="testimonial-header"> 
+        <img src="images/user2.jpg" alt="User 2">
+        <h3>John</h3>
+          </div>
+        <p>This university helped me achieve my dreams!</p>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+      </div>
+    </div>
+   
+  </section>
+
+  <section class="cta">
+    <h1>Enroll Now for Various Online Courses</h1>
+    <a href="contact.html" class="hero-btn">Contact Us</a>
+  </section>
+
+  <footer>
+    <h4>About Us</h4>
+    <p>Made with <i class="fa fa-heart"></i> by Priya</p>
+    <div class="icons">
+      <i class="fab fa-facebook-f"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-linkedin-in"></i>
+    </div>
+  </footer>
+</body>
+</html>
